@@ -1,12 +1,19 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import { ApolloProvider } from 'react-apollo'
+import createApolloClient from './core/createApolloClient'
+import UsersProfile from './components/userProfile'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>TEST</h1>
-    </div>
-  );
+const client = createApolloClient()
+
+class App extends Component {
+ render() {
+   return (
+     <ApolloProvider client={client}>
+       <div className="App">
+         <UsersProfile />
+       </div>
+     </ApolloProvider>
+   );
+ }
 }
-
-export default App;
+export default App
