@@ -1,0 +1,19 @@
+.user {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 170px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 25px;
+
+    &__content {
+      margin-top: 10px;
+    }
+  }
+}
