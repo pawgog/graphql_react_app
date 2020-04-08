@@ -11,6 +11,7 @@ const mocks = {
     age: casual.integer(10, 100),
     city: casual.city,
     country: casual.country,
+    phone: casual.phone,
     website: casual.url,
   })
 }

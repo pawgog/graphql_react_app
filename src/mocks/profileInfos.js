@@ -5,6 +5,7 @@ const profileInfo = `
         age: Int!
         city: String!
         country: String!
+        phone: String!
         website: String!
     }
  `

@@ -8,6 +8,7 @@ const getProfileInfo = gql`
       age
       city
       country
+      phone
       website
     }
   }

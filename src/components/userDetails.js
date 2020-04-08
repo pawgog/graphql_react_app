@@ -22,6 +22,11 @@ const UserDetails = props => {
             <b>City: </b>
             {data.city}
           </p>
+          <p>
+            <b>Phone number: </b>
+            <br />
+            {data.phone}
+          </p>
         </div>
       </div>
       <a href={data.website}>Details</a>
